@@ -1,1 +1,131 @@
-<h1 id="title">How Do You Like Your WINGS</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wings Survey</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <div class="container">
+        <header class="header">
+            <div class="logo"></div>
+            <h1 class="heading" id="title">How Do You Like Your Wings</h1>
+            <p class="details" id="description">
+                Please fill the form to leave your feedback! This short survey will take you not more than 5 minutes. Thank you for your support.
+                <span class="signature">ShamareDev</span>
+            </p>
+        </header>
+        <body class="body">
+        <!--text_entry form for personal info-->
+        <main class="content">
+            <form class="survey" id="survey-form">
+                <div class="form-entry">
+                    <label for="name" id="name-label">Name
+                    </label>
+                    <input type="text" id="name" placeholder="Enter your name..." required>
+                </div>
+                <div class="form-entry">
+                    <label for="email" class="email" id="email-label">Email 
+                    </label>
+                    <input type="email" id="email" placeholder="Enter your email..." required>
+                </div>
+                <div class="form-entry">
+                    <label for="number" class="label" id="number-label">Age
+                    </label>
+                    <input type="number" id="number" placeholder="Enter your age..." min="12" max="60" optional>
+                </div>
+                <!--Dropbox1-->
+                <div class="form-entry">
+                    <label for="dropdown" class="label">
+                        <span class="placeholder">Which option best describes the way you like your wings cooked?</span>
+                    </label>
+                    <select id="dropdown" required>
+                        <option value=""></option>
+                        <option value="deep-fried">Deep Fried</option>
+                        <option value="grilled">Grilled</option>
+                        <option value="air-fried-baked">Air Fried/ Baked</option>
+                        <option value="no-preferrence">No Preferrence</option>>
+                    </select>
+                </div>
+                <!--Radio Buttons for form1-->
+                <div class="form-entry">
+                    <p class="label">
+                        <span class="flavor">Which base flavor do you like?</span>
+                    </p>
+                    <div class="form-item">
+                        <input type="radio" name="base_sauce" value="hot">Hot
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="form-item">
+                        <input type="radio" name="base_sauce" value="Mild">Mild
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="form-item">
+                        <input type="radio" name="base_sauce" value="lemon_pepper">Lemon Pepper
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="form-item">
+                        <input type="radio" name="base_sauce" value="barbecue">Barbecue
+                        <span class="checkmark"></span>
+                    </div>
+                </div>
+                <!--Dropbox2-->
+                <div class="form-entry">
+                    <label for="feature" class="label">
+                        <span class="placeholder">What is your favorite side to have with your wings?</span>
+                    </label>
+                    <select id="feature" required>
+                        <option value=""></option>
+                        <option value="fries">Fries</option>
+                        <option value="cheese_sticks">Cheese Sticks</option>
+                        <option value="onion_rings">Onion Rings</option>
+                        <option value="salad">Salad</option>
+                    </select>
+                </div>
+                <!--Radio buttons for form2-->
+                <div class="form-entry radio">
+                    <p class="label">
+                        <span class="dip">Which dipping sauce if any do you like?</span>
+                    </p>
+                    <div class="form-item">
+                        <input type="checkbox" name="dipping_sauce" value="ranch">Ranch
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="form-item">
+                        <input type="checkbox" name="dipping_sauce" value="blue_cheese">Blue Cheese
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="form-item">
+                        <input type="checkbox" name="dipping_sauce" value="honey_mustard">Honey Mustard
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="form-item">
+                        <input type="checkbox" name="dipping_sauce" value="barbecue">Barbecue
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="form-item">
+                        <input type="checkbox" name="dipping_sauce" value="Buffalo">Buffalo
+                        <span class="checkmark"></span>
+                    </div>
+                </div>
+                <!--Comment Box-->
+        
+                <div class="form-entry textarea">
+                    <span class="placeholder">Feel free to add any additional comments</span>
+                    <textarea id="comments"></textarea>
+                    <label for="comments" class="label">
+                    </label>
+
+                <!--Submit Button-->
+                </div>
+                <button class="button" type="submit" id="submit">Send my Survey!</button>
+            </form>
+        </main>
+        <footer class="footer">
+
+        </footer>
+        </body>
+    </div>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  
+</html>

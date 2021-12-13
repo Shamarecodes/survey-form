@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+.body{
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: rgba(244,240,236,1);
+    margin: 20px;
+    
+}
+
+h1{
+    margin-bottom: 0px;
+}
+
+h1 + p{
+    margin-top: 0px;
+}
+
+form{
+    background-color: #fff;
+    box-shadow: 2px, 5px, 10px rgba(0,0,0,0.8);
+    border-radius: 5px;
+    padding: 30px 20px,;
+    max-width: 450px;
+    margin:0 auto;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-entry{
+text-align: left;
+margin-bottom: 20px;
+}
+
+.form-entry label{
+display: block;
+margin-bottom: 5px;
+}
+
+.form-entry input,
+.form-entry select,
+.form-entry textarea{
+    border: 1px solid #111;
+    border-radius: 2px;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+}
+
+.form-entry input[type="radio"], .form-entry input[type="checkbox"]
+{
+    display: inline;
+    width: auto;
+}
+
+.button{
+    background-color: #C8D2DF;
+    border: 1px solid #BFAED0;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+}
+.flavor, .dip
+{
+    font-size: 18px;
+    font-weight: bold;
+}
